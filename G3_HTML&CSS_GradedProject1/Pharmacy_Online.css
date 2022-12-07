@@ -1,0 +1,154 @@
+body {
+  margin: 0 auto;
+}
+header h1 {
+  margin: 0%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgb(84, 81, 81);
+}
+nav {
+  position: static;
+  top: 0%;
+}
+.menu {
+  margin: 0%;
+  background-color: rgb(128, 122, 122);
+}
+.menu li {
+  padding: 10px;
+  display: inline-block;
+}
+.menu li:hover {
+  background-color: rgb(97, 75, 75);
+}
+.menu li:nth-child(2):hover #Dropdown2,
+.menu li:nth-child(3):hover #Dropdown3 {
+  display: block;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+#Dropdown2,
+#Dropdown3 {
+  position: absolute;
+  padding: 10px;
+  width: auto;
+  display: none;
+  background-color: whitesmoke;
+}
+#Dropdown2 li,
+#Dropdown3 li {
+  display: block;
+}
+#Dropdown2 li a,
+#Dropdown3 li a {
+  color: blue;
+}
+footer p {
+  margin: 0%;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.offer-container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-images-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  animation-name: myAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid steelblue;
+  cursor: pointer;
+}
+
+@keyframes myAnimation {
+  0% {
+    background-image: url('./Images/Animation/ani1.jpg');
+  }
+  25% {
+    background-image: url('./Images/Animation/ani2.png');
+  }
+  50% {
+    background-image: url('./Images/Animation/ani3.jpg');
+  }
+  75% {
+    background-image: url('./Images/Animation/ani4.jpg');
+  }
+  100% {
+    background-image: url('./Images/Animation/ani5.jpg');
+  }
+}
+
+.products-container {
+  margin: 1rem;
+}
+
+.products-container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.products-container-cards-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  padding: 1rem;
+  flex-basis: 25%;
+  justify-content: space-between;
+  max-width: max-content;
+}
+
+.products-container-cards-card-header {
+  margin: 0;
+}
+
+.products-container-cards-card-amount {
+  margin: 0;
+}
+
+.products-container-cards-card-offer {
+  margin: 0;
+}
+
+.products-container-cards-card-image {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+}
+
+.products-container-cards-card-button {
+  cursor: pointer;
+  border: 1px solid darkblue;
+  background: transparent;
+  color: orange;
+  font-weight: bolder;
+  border-radius: 0.2rem;
+  padding: 0.4rem 0;
+}
+
+.products-container-cards-card-button:active {
+  background-color: rgb(250, 234, 230);
+  border: 1px solid rgb(0, 255, 76);
+}

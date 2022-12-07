@@ -2,61 +2,7 @@
 <html>
   <head>
     <title>Online Pharmacy</title>
-    <style>
-      header h1 {
-        margin: 0%;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        background-color: rgb(84, 81, 81);
-      }
-      nav {
-        position: static;
-        top: 0%;
-      }
-      .menu {
-        margin: 0%;
-        background-color: rgb(128, 122, 122);
-      }
-      .menu li {
-        padding: 10px;
-        display: inline-block;
-      }
-      .menu li:hover {
-        background-color: rgb(97, 75, 75);
-      }
-      .menu li:nth-child(2):hover #Dropdown2,
-      .menu li:nth-child(3):hover #Dropdown3 {
-        display: block;
-      }
-      .menu li a {
-        color: white;
-        text-decoration: none;
-      }
-      #Dropdown2,
-      #Dropdown3 {
-        position: absolute;
-        padding: 10px;
-        width: auto;
-        display: none;
-        background-color: whitesmoke;
-      }
-      #Dropdown2 li,
-      #Dropdown3 li {
-        display: block;
-      }
-      #Dropdown2 li a,
-      #Dropdown3 li a {
-        color: blue;
-      }
-      footer p {
-        margin: 0%;
-        padding: 10px;
-        color: white;
-        background-color: black;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="./Pharmacy_Online.css" />
   </head>
   <body>
     <header><h1>Pharmacy</h1></header>
@@ -85,6 +31,109 @@
         <li><a href="#">Lab Test</a></li>
       </ul>
     </nav>
+    <div class="offer-container">
+      <div class="offer-images-div"></div>
+    </div>
+    <div class="products-container">
+      <div>
+        <h2>Covid Care</h2>
+        <div class="products-container-cards">
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Covid Test Kit</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/c1.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.40</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.30/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Covid Essentials</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/c2.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.240</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.170/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Sanitizer Bottle</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/c3.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.99</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.87/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Mask</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/c4.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.45</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.30/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Diabetes Care</h2>
+        <div class="products-container-cards">
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Mask</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/d1.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.45</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.30/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Mask</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/d2.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.45</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.30/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Mask</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/d3.jpg"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.45</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.30/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+          <div class="products-container-cards-card">
+            <h4 class="products-container-cards-card-header">Mask</h4>
+            <img
+              class="products-container-cards-card-image"
+              src="./Images/Products/d4.png"
+              alt="Product"
+            />
+            <p class="products-container-cards-card-amount">Rs.45</p>
+            <p class="products-container-cards-card-offer">Offer : Rs.30/-</p>
+            <button class="products-container-cards-card-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer><p>@copyright. Only for demonstration purposes</p></footer>
   </body>
 </html>

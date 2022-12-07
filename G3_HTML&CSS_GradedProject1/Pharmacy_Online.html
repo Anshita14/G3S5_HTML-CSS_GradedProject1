@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Online Pharmacy</title>
-        <style>
-            header h1{
-                margin: 0%;
-                padding: 20px;
-                text-align:center;
-                color: white;
-                background-color: rgb(84, 81, 81);
-            }
-            nav {
-                position: static;
-                top: 0%;
-            }
-            .menu{
-                margin: 0%;
-                background-color: rgb(128, 122, 122);
-            }
-            .menu li{
-                padding: 10px;
-                display: inline-block;            
-            }
-            .menu li:hover{
-                background-color: rgb(97, 75, 75);
-                
-            }
-            .menu li:nth-child(2):hover #Dropdown2, .menu li:nth-child(3):hover #Dropdown3{
-                display: block;
-            }
-            .menu li a{
-                color: white;
-                text-decoration: none;
-            }
-            #Dropdown2, #Dropdown3{
-                position: absolute;
-                padding: 10px;
-                width: auto;
-                display: none;
-                background-color: whitesmoke;
-            }
-            #Dropdown2 li, #Dropdown3 li{
-                display: block;
-            }
-            #Dropdown2 li a,#Dropdown3 li a{
-                color: blue;
-            }
-            footer p{
-                margin: 0%;
-                padding: 10px;
-                color: white;
-                background-color: black;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <header><h1>Pharmacy</h1></header> 
-        <nav><ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Medicine</a>
-                <ul id="Dropdown2">
-                    <li><a >Fever</a></li>
-                    <li><a >Muscle Pains</a></li>
-                    <li><a >Cold and Cough</a></li>
-                </ul>    
-            </li>      
-            
-            <li><a href="#">Health Care</a>
-                <ul id="Dropdown3">
-                <li><a >Baby Care</a></li>
-                <li><a >Skin Care</a></li>
-                <li><a >Home Care</a></li>
-                <li><a >Personal Care</a></li>
-                <li><a >Pet Care</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Lab Test</a>  </li>   
-        </ul>                           
-        </nav>
-        <footer><p>@copyright. Only for demonstration purposes</f</p>ooter>
-    </body>
+  <head>
+    <title>Online Pharmacy</title>
+    <style>
+      header h1 {
+        margin: 0%;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgb(84, 81, 81);
+      }
+      nav {
+        position: static;
+        top: 0%;
+      }
+      .menu {
+        margin: 0%;
+        background-color: rgb(128, 122, 122);
+      }
+      .menu li {
+        padding: 10px;
+        display: inline-block;
+      }
+      .menu li:hover {
+        background-color: rgb(97, 75, 75);
+      }
+      .menu li:nth-child(2):hover #Dropdown2,
+      .menu li:nth-child(3):hover #Dropdown3 {
+        display: block;
+      }
+      .menu li a {
+        color: white;
+        text-decoration: none;
+      }
+      #Dropdown2,
+      #Dropdown3 {
+        position: absolute;
+        padding: 10px;
+        width: auto;
+        display: none;
+        background-color: whitesmoke;
+      }
+      #Dropdown2 li,
+      #Dropdown3 li {
+        display: block;
+      }
+      #Dropdown2 li a,
+      #Dropdown3 li a {
+        color: blue;
+      }
+      footer p {
+        margin: 0%;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Pharmacy</h1></header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Our Medicine</a>
+          <ul id="Dropdown2">
+            <li><a>Fever</a></li>
+            <li><a>Muscle Pains</a></li>
+            <li><a>Cold and Cough</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Health Care</a>
+          <ul id="Dropdown3">
+            <li><a>Baby Care</a></li>
+            <li><a>Skin Care</a></li>
+            <li><a>Home Care</a></li>
+            <li><a>Personal Care</a></li>
+            <li><a>Pet Care</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Lab Test</a></li>
+      </ul>
+    </nav>
+    <footer><p>@copyright. Only for demonstration purposes</p></footer>
+  </body>
 </html>

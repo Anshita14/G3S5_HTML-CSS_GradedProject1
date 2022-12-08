@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   width: 50%;
+  align-items: center;
 }
 
 .form-container-form-div {
@@ -24,11 +25,17 @@ body {
   margin-top: 5rem;
   overflow-x: hidden;
   background-color: ghostwhite;
+  box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);
+  -webkit-box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);
+  -moz-box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);
 }
 
 .form-container-form-div-userDetails {
   flex: 1;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .form-container-form-div-imageDiv {
@@ -40,4 +47,36 @@ body {
 
 .form-container-form-div-imageDiv-image {
   width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.form-container-form-contactDetails-inputs,
+.form-container-form-address-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-container-form-contactDetails-inputs-input,
+.form-container-form-address-inputs-input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background: transparent;
+}
+
+.form-container-form-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.form-container-form-buttons-button {
+  border: none;
+  border-radius: 0.3rem;
+  background-color: purple;
+  color: white;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
 }

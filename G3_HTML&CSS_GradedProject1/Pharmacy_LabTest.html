@@ -12,60 +12,118 @@
         <div class="form-container-form-div">
           <div class="form-container-form-div-userDetails">
             <div class="form-container-form-contactDetails">
-              <h2 class="form-container-form-contactDetails-header">
+              <h3 class="form-container-form-contactDetails-header">
                 1. Your Contact Details
-              </h2>
+              </h3>
               <div class="form-container-form-contactDetails-inputs">
                 <input
                   type="text"
                   placeholder="Full Name"
                   class="form-container-form-contactDetails-inputs-input"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Patient Id if Exists"
                   class="form-container-form-contactDetails-inputs-input"
+                  required
                 />
                 <input
                   type="number"
                   placeholder="Contact Number"
                   class="form-container-form-contactDetails-inputs-input"
+                  required
                 />
                 <input
                   type="email"
                   placeholder="Email Id"
                   class="form-container-form-contactDetails-inputs-input"
+                  required
                 />
               </div>
             </div>
             <div class="form-container-form-address">
-              <h2 class="form-container-form-address-header">2. Address</h2>
+              <h3 class="form-container-form-address-header">2. Address</h3>
               <div class="form-container-form-address-inputs">
                 <input
                   type="text"
                   placeholder="House Number"
                   class="form-container-form-address-inputs-input"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Street"
                   class="form-container-form-address-inputs-input"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Area"
                   class="form-container-form-address-inputs-input"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="District"
-                  class="form-container-form-contactDetails-inputs-input"
+                  class="form-container-form-address-inputs-input"
+                  required
                 />
               </div>
             </div>
-            <div class="form-container-form-testType"></div>
-            <div class="form-container-form-report"></div>
-            <div class="form-container-form-dateTime"></div>
+            <div class="form-container-form-testType">
+              <h3 class="form-container-form-address-header">3. Test Type</h3>
+              <fieldset>
+                <legend>Check atleast one box without fail</legend>
+                <div>
+                  <input type="checkbox" id="cbc" name="testType" checked required />
+                  <label for="cbc">CBC</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="completeUrine" name="testType" required />
+                  <label for="completeUrine">Complete Urine</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="lipidProfile" name="testType" required />
+                  <label for="lipidProfile">Lipid Profile</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="tsh" name="testType" required />
+                  <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="glucoseTest" name="testType" required />
+                  <label for="glucoseTest">Glucose Test</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-container-form-report">
+              <h3 class="form-container-form-address-header">4. Report</h3>
+              <fieldset>
+                <legend>Do you want a hard copy of the report?</legend>
+                <div>
+                  <input type="radio" id="yesReport" name="report" checked required />
+                  <label for="yesReport">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" id="noReport" name="report" required />
+                  <label for="noReport">No</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-container-form-dateTime">
+              <h3 class="form-container-form-address-header">
+                5. Lab Test Date and Time
+              </h3>
+              <div>
+                <label for="start">Select Date:</label>
+                <input type="date" id="labDate" name="labDate" required />
+              </div>
+              <div>
+                <label for="labTime">Select Time:</label>
+                <input type="time" id="labTime" name="labTime" required />
+              </div>
+            </div>
           </div>
           <div class="form-container-form-div-imageDiv">
             <img

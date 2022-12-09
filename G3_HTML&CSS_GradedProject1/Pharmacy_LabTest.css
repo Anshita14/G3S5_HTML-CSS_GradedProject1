@@ -6,13 +6,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .form-container-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 50%;
   align-items: center;
 }
 
@@ -22,7 +22,7 @@ body {
   max-height: 75vh;
   gap: 3rem;
   overflow-y: scroll;
-  margin-top: 5rem;
+  margin-top: 3rem;
   overflow-x: hidden;
   background-color: ghostwhite;
   box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);

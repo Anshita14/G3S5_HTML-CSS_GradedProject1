@@ -118,6 +118,13 @@ footer p {
   flex-basis: 25%;
   justify-content: space-between;
   max-width: max-content;
+  box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);
+  -webkit-box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);
+  -moz-box-shadow: 0px 0px 17px 4px rgba(148, 148, 148, 0.85);
+}
+
+.products-container-cards-card:hover {
+  background-color: rgb(208, 238, 217);
 }
 
 .products-container-cards-card-header {

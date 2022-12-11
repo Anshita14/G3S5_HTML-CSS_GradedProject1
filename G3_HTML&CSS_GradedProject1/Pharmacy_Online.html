@@ -6,7 +6,7 @@
   </head>
   <body>
     <header><h1>Pharmacy</h1></header>
-    <nav>
+    <nav id="navbar">
       <ul class="menu">
         <li><a href="#">Home</a></li>
         <li>
@@ -135,5 +135,19 @@
       </div>
     </div>
     <footer><p>@copyright. Only for demonstration purposes</p></footer>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
   </body>
 </html>

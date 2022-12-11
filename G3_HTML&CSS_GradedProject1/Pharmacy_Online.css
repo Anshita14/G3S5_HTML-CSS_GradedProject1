@@ -8,9 +8,13 @@ header h1 {
   color: white;
   background-color: rgb(84, 81, 81);
 }
-nav {
-  position: static;
-  top: 0%;
+#navbar {
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .menu {
   margin: 0%;

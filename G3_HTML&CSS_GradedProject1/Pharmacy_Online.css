@@ -8,9 +8,9 @@ header h1 {
   color: white;
   background-color: rgb(84, 81, 81);
 }
-#navbar {
+/* #navbar {
   overflow: hidden;
-}
+} */
 .sticky {
   position: fixed;
   top: 0;
@@ -51,6 +51,7 @@ header h1 {
 #Dropdown3 li a {
   color: blue;
 }
+
 footer p {
   margin: 0%;
   padding: 10px;
